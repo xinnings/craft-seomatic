@@ -23,16 +23,11 @@ use nystudio107\seomatic\base\InheritableSettingsModel;
  */
 class MetaSitemapVars extends InheritableSettingsModel
 {
-    // Static Methods
-    // =========================================================================
-
     /**
-     * @var bool
+    * @var bool
      */
     public $sitemapUrls;
 
-    // Public Properties
-    // =========================================================================
     /**
      * @var bool
      */
@@ -46,31 +41,53 @@ class MetaSitemapVars extends InheritableSettingsModel
     /**
      * @var bool
      */
+    public $newsSitemap = false;
+
+    /**
+     * @var string
+     */
+    public $newsPublicationName = '';
+
+    /**
+     * @var bool
+     */
     public $sitemapFiles;
+
     /**
      * @var bool
      */
     public $sitemapAltLinks;
+
     /**
      * @var string
      */
     public $sitemapChangeFreq;
+
     /**
      * @var float
      */
     public $sitemapPriority;
+
     /**
      * @var null|int
      */
     public $sitemapLimit;
+
+    /**
+     * @var null|int
+     */
+    public $sitemapPageSize = 500;
+
     /**
      * @var null|int
      */
     public $structureDepth;
+
     /**
      * @var array
      */
     public $sitemapImageFieldMap = [];
+
     /**
      * @var array
      */
