@@ -37,6 +37,12 @@ class MetaSitemapVars extends InheritableSettingsModel
      * @var bool
      */
     public $sitemapAssets;
+
+    /**
+     * @var string
+     */
+    public $sitemapAssetTransform = null;
+
     /**
      * @var bool
      */
