@@ -24,7 +24,7 @@ use nystudio107\seomatic\base\InheritableSettingsModel;
 class MetaSitemapVars extends InheritableSettingsModel
 {
     /**
-    * @var bool
+     * @var bool
      */
     public $sitemapUrls;
 

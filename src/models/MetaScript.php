@@ -28,7 +28,7 @@ class MetaScript extends NonceItem
     // Constants
     // =========================================================================
 
-    const ITEM_TYPE = 'MetaScript';
+    public const ITEM_TYPE = 'MetaScript';
 
     // Static Methods
     // =========================================================================
@@ -61,12 +61,12 @@ class MetaScript extends NonceItem
     public $position = View::POS_HEAD;
 
     /**
-     * @var
+     * @var string
      */
     public $bodyTemplatePath;
 
     /**
-     * @var
+     * @var string
      */
     public $bodyTemplateString;
 
@@ -84,6 +84,21 @@ class MetaScript extends NonceItem
      * @var array
      */
     public $dataLayer = [];
+
+    /**
+     * @var bool Whether this tag is deprecated or not
+     */
+    public $deprecated = false;
+
+    /**
+     * @var string The deprecation notice to display
+     */
+    public $deprecationNotice = '';
+
+    /**
+     * @var bool Whether this tag is discontinued, and should not be displayed or rendered
+     */
+    public $discontinued = false;
 
     /**
      * @param array $config
